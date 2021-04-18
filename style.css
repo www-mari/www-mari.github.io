@@ -1,11 +1,11 @@
 body {
-    background-color: rgb(108, 156, 158);
+    background-color: rgb(108, 156, 158); /* cadet blue, (108, 156, 158) */
     font-size: small;
     text-align: center;
 }
 
 h1 {
-    font-family:sans-serif;
+    font-family:monospace; /* sans-serif */
     color: black;
 }
 
