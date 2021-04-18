@@ -5,8 +5,9 @@ body {
 }
 
 h1 {
-    font-family:sans-serif; /* monospace */
+    font-family: monospace; /* monospace vs. sans-serif ??*/
     color: black;
+    font-size: medium;
 }
 
 /* GAME BOARD STYLES */
