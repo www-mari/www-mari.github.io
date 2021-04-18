@@ -1,6 +1,5 @@
 body {
     background-color: rgb(108, 156, 158); 
-    font-size: small;
     text-align: center;
 }
 
@@ -26,8 +25,6 @@ h1 {
 .gameBoardPixel {
     width: 1vw;
     height: 1vw;
-    border-radius: 10px;
-    float: left;
 }
 
 /* SCORE BOX */
@@ -35,7 +32,6 @@ h1 {
     width: 20vw;
     display: flex;
     margin: auto;
-    justify-content: space-around;
 }
 
 .scoreBox {
