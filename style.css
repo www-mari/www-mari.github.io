@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-    font-family: monospace; /* monospace vs. sans-serif ?? */
+    font-family: monospace; /* monospace vs. sans-serif ??*/
     color: black;
     font-size:x-large;
 }
@@ -25,6 +25,7 @@ h1 {
 .gameBoardPixel {
     width: 1vw;
     height: 1vw;
+    float: left;
 }
 
 /* SCORE BOX */
