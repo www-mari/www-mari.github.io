@@ -32,6 +32,7 @@ h1 {
     width: 20vw;
     display: flex;
     margin: auto;
+    justify-content: space-around;
 }
 
 .scoreBox {
