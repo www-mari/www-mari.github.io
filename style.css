@@ -2,3 +2,12 @@ h1 {
     color:coral;
     text-align: center;
 }
+
+#box-one {
+    background-color: darkred;
+}
+
+#box-two {
+    background-color: olive;
+    padding: 10px;
+}
