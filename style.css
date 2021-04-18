@@ -1,38 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
+    background-color: cadetblue;
     font-size: small;
+    text-align: center;
 }
 
 h1 {
-    color:springgreen;
-}
-
-em {
-    color:tomato;
-}
-
-#box-one {
-    background-color: darkred;
-}
-
-#box-two {
-    background-color: olive;
-    padding: 10px;
-}
-
-#intro {
-    font-size: 130%;
-    border: 1px solid black;
-}
-
-.important {
-    background-color: palevioletred;
-}
-
-#intro .important {
-    background-color: peachpuff;
-}
-
-#intro .important em {
-    color: powderblue;
+    color: black;
 }
