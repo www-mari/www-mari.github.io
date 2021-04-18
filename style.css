@@ -13,7 +13,7 @@ h1 {
 #gameBoard {
     width: 40vw;
     height: 40vw;
-    margin: auto;
+    margin: 1vw auto;
     background-color: #0c1021;
     border: solid 10px slategrey;
     border-radius: 10px;
@@ -33,7 +33,7 @@ h1 {
 #scoreBoard {
     width: 20vw;
     display: flex;
-    margin: 1vh auto;
+    margin: auto;
     justify-content: space-around;
 }
 
