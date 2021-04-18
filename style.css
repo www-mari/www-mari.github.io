@@ -33,7 +33,7 @@ h1 {
 #scoreBoard {
     width: 20vw;
     display: flex;
-    margin: 1vw auto;
+    margin: 1vh auto;
     justify-content: space-around;
 }
 
