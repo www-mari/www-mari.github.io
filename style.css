@@ -14,7 +14,7 @@ h1 {
 #gameBoard {
     width: 40vw;
     height: 40vw;
-    margin: 2vw auto;
+    margin: auto;
     background-color: #0c1021;
     border: solid 10px slategrey;
     border-radius: 10px;
