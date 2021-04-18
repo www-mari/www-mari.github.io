@@ -7,7 +7,7 @@ body {
 h1 {
     font-family: monospace; /* monospace vs. sans-serif ??*/
     color: black;
-    font-size: medium;
+    font-size:x-large;
 }
 
 /* GAME BOARD STYLES */
@@ -35,7 +35,7 @@ h1 {
 .scoreBox {
     border-radius: 10px;
     border: solid 5px slategrey;
-    color: dimgray;
+    color:lightgray;
     background-color: #0c1021;
     display: inline-block;
     padding: 1vw;
