@@ -1,13 +1,9 @@
-h1 {
-    color:coral;
+body {
+    background-color: slategrey;
     text-align: center;
 }
 
-#box-one {
-    background-color: darkred;
+h1 {
+    color:black;
 }
 
-#box-two {
-    background-color: olive;
-    padding: 10px;
-}
