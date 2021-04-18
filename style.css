@@ -7,3 +7,17 @@ body {
 h1 {
     color: black;
 }
+
+/* GAME BOARD STYLES */
+#gameBoard {
+    width: 40vw;
+    height: 40vw;
+    margin: 2vw auto;
+    background-color: #0c1021;
+    border: solid 10px slategrey;
+    border-radius: 10px;
+  
+    -webkit-box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.6);
+  }
