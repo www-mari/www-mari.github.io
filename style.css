@@ -10,7 +10,7 @@ h1 {
 }
 
 /* GAME BOARD */
-#gameBoard {
+#gameContainer {
     width: 40vw;
     height: 40vw;
     margin: 1vw auto;
