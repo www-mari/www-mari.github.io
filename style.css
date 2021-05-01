@@ -1,6 +1,5 @@
 body {
-    /*background-color: rgb(105, 148, 101); */
-    background-color: rgb(119, 131, 99);
+    background-color: rgb(107, 151, 129);
     text-align: center;
 }
 
@@ -65,8 +64,17 @@ h3 {
 
 #restartButton {
     border: 2px solid black;
+    border-radius: 10px;
+}
+#restartButton:hover {
+    background-color: rgb(112, 140, 144);
+    /*background-color: slategrey;*/
 }
 
 #quitSurvey {
     border: 2px solid black;
+    border-radius: 10px;
+}
+#quitSurvey:hover {
+    background-color: slategray;
 }
