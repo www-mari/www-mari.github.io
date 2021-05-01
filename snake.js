@@ -10,6 +10,7 @@ const DOT_SIZE = 10;
 const ALL_DOTS = 1600;
 const WIDTH = gameBoard.width;
 const HEIGHT = gameBoard.height;
+const DELAY = 140;
 // const max_rand & const delay?
 
 var snake_x = new Array(ALL_DOTS);
@@ -39,7 +40,7 @@ function init() {
     loadImages();
     createSnake();
     createFood();
-    game();
+    setTimeout("game()", DELAY);
 }
 
 function loadImages() {
@@ -102,6 +103,6 @@ function game(){
     if(inGame){
         checkFood();
         draw();
-        game();
+        setTimeout("game()", DELAY);
     }
 }
