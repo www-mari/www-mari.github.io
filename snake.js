@@ -162,6 +162,7 @@ onkeydown = function(e) {
     console.log("key pressed!");
     console.log(e);
     var key = e.keyCode;
+    console.log("key: " + key);
     if((key == LEFT_KEY) && (!right)){
         left = true;
         up = false;
