@@ -9,6 +9,7 @@ var screenHeight = screen.height;
 var screenWidth = screen.width;
 var gameOverMenu;
 var restartButton;
+var quitSurvey;
 
 const DOT_SIZE = 10;
 const ALL_DOTS = 1600;
@@ -37,7 +38,15 @@ function init() {
     const gameBoard = document.getElementById("gameBoard");
     ctx = gameBoard.getContext('2d');
 
+    document.addEventListener("keydown", KeyboardEvent); //remove this if keys stop working
+
     gameOverMenu = document.getElementById("gameOver");
+
+    restartButton = document.getElementById("restartButton");
+    restartButton.addEventListener("click", gameRestart);
+
+    quitSurvey = document.getElementById("quitSurvey");
+    quitSurvey.addEventListener();
 
     loadImages();
     createSnake();
@@ -103,8 +112,6 @@ function draw() {
 //actions at game over
 function gameOver(menu) {
     console.log("inside game over function");
-    menu.style.top = (screen.height / 2) - (menu.offsetHeight / 2) + "px";
-    menu.style.left = (screen.width / 2) - (menu.offsetWidth / 2) + "px";
     menu.style.visibility = "visible";
 }
 
@@ -159,6 +166,13 @@ function game(){
         draw();
         setTimeout("game()", DELAY);
     }
+}
+
+function gameRestart(){
+    console.log("restart game!");
+    score = 0;
+    inGame = true;
+    game();
 }
 
 //keypress function
