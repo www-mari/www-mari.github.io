@@ -26,6 +26,7 @@ var inGame = true;
 var head;
 var food;
 var dots;
+var score = 0;
 
 function init() {
     const gameBoard = document.getElementById("gameBoard");
@@ -38,6 +39,7 @@ function init() {
     loadImages();
     createSnake();
     createFood();
+    game();
 }
 
 function loadImages() {
@@ -52,7 +54,8 @@ function loadImages() {
 
 function createSnake() {
     //snake will start with length of 2
-    for(let i = 0; i < 2; i++){
+    dots = 2;
+    for(let i = 0; i < dots; i++){
         snake_x[i] = 50 - i * 10;
         snake_y[i] = 50;
     }
@@ -65,4 +68,40 @@ function createFood() {
     f = Math.floor(Math.random() * 30);
     food_y = f * DOT_SIZE;
 
+}
+
+function checkFood() {
+    if((snake_x[0] == food_x) && (snake_y[0] == food_y)){
+        dots++;
+        score++;
+        createFood();
+    }
+}
+
+function draw() {
+    ctx.clearRect(0, 0, WIDTH, HEIGHT);
+
+    if(inGame){
+        ctx.drawImage(food, food_x, food_y);
+
+        for(let i = 0; i < dots; i++){
+            ctx.drawImage(head, snake_x[i], snake_y[i]);
+        }
+    } else {
+        gameOver();
+    }
+}
+
+function gameOver() {
+    console.log("inside game over function");
+    ctx.fillStyle = 'white';
+    ctx.fillText('Game over', WIDTH/2, HEIGHT/2);
+}
+
+function game(){
+    if(inGame){
+        checkFood();
+        draw();
+        game();
+    }
 }
