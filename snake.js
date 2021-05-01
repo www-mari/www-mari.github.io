@@ -169,8 +169,12 @@ function game(){
 function gameRestart(){
     console.log("restart game!");
     gameOverMenu.style.visibility = "hidden";
+    console.log("is menu hidden?");
     score = 0;
     inGame = true;
+    loadImages();
+    createSnake();
+    createFood();
     setTimeout("game()", DELAY);
 }
 
