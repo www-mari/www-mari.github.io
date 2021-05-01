@@ -1,8 +1,10 @@
-/* CONSTANTS */
+/* CONSTANTS & VARIABLES*/
 const LEFT_KEY = 37;
 const RIGHT_KEY = 39;
 const UP_KEY = 38;
 const DOWN_KEY = 40;
+
+var ctx;
 
 const DOT_SIZE = 10;
 const ALL_DOTS = 1600;
@@ -15,7 +17,11 @@ var snake_y = new Array(ALL_DOTS);
 var food_x;
 var food_y;
 
-var ctx;
+var left = false;
+var right = true;
+var up = false;
+var down = false;
+var inGame = true;
 
 var head;
 var food;
