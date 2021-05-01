@@ -47,7 +47,7 @@ function loadImages() {
 function createSnake() {
     //snake will start with length of 2
     for(let i = 0; i < 2; i++){
-        snake_x[i] = 50 - z * 10;
+        snake_x[i] = 50 - i * 10;
         snake_y[i] = 50;
     }
 }
