@@ -53,6 +53,7 @@ function loadImages() {
 
 }
 
+//create the snake 
 function createSnake() {
     //snake will start with length of 2
     dots = 2;
@@ -62,6 +63,7 @@ function createSnake() {
     }
 }
 
+//create food in a random location on the game board
 function createFood() {
     var f = Math.floor(Math.random() * 30);
     food_x = f * DOT_SIZE;
@@ -71,6 +73,7 @@ function createFood() {
 
 }
 
+//snake eats food
 function checkFood() {
     if((snake_x[0] == food_x) && (snake_y[0] == food_y)){
         dots++;
@@ -79,6 +82,7 @@ function checkFood() {
     }
 }
 
+//draw food and snake at game start 
 function draw() {
     ctx.clearRect(0, 0, WIDTH, HEIGHT);
 
@@ -93,12 +97,14 @@ function draw() {
     }
 }
 
+//actions at game over
 function gameOver() {
     console.log("inside game over function");
     ctx.fillStyle = 'white';
     ctx.fillText('Game over', WIDTH/2, HEIGHT/2);
 }
 
+//move function
 function move() {
     for(let i = dots; i > 0; i--){
         snake_x[i] = snake_x[(i - 1)];
@@ -118,6 +124,8 @@ function move() {
     }
 }
 
+
+//end game if snake hits border or itself
 function checkCollision() {
     for(let i = dots; i > 0; i--){
         if((i > 4) && (snake_x[0] == snake_x[i]) && (snake_y[0] == snake_y[i])){
@@ -138,6 +146,7 @@ function checkCollision() {
     }
 }
 
+//game cycle
 function game(){
     if(inGame){
         checkFood();
@@ -147,3 +156,28 @@ function game(){
         setTimeout("game()", DELAY);
     }
 }
+
+//keypress function
+onkeydown = function(e) {
+    var key = e.keyCode;
+    if((key == LEFT_KEY) && (!right)){
+        left = true;
+        up = false;
+        down = false;
+    }
+    if((key = RIGHT_KEY) && (!left)){
+        right = true;
+        up = false;
+        down = false;
+    }
+    if((key == UP_KEY) && (!down)){
+        up = true;
+        right = false;
+        left = false;
+    }
+    if((key == DOWN_KEY) && (!up)){
+        down = true;
+        right = false;
+        left = false;
+    }
+};
