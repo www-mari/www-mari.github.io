@@ -93,18 +93,19 @@ function draw() {
             ctx.drawImage(head, snake_x[i], snake_y[i]);
         }
     } else {
-        gameOver();
+        gameOver(gameOverMenu);
     }
 }
 
 //actions at game over
-function gameOver() {
+function gameOver(menu) {
     console.log("inside game over function");
     // ctx.fillStyle = 'white';
     // ctx.textBaseline = 'middle';
     // ctx.textAlign = 'center';
     // ctx.font = 'normal bold 18px serif';
     // ctx.fillText('Game Over', WIDTH/2, HEIGHT/2);
+    menu.style.visibility = "visible";
 }
 
 //move function
