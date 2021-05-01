@@ -102,6 +102,9 @@ function draw() {
 function gameOver() {
     console.log("inside game over function");
     ctx.fillStyle = 'white';
+    ctx.textBaseline = 'middle';
+    ctx.textAlign = 'center';
+    ctx.font = 'normal bold 18px serif';
     ctx.fillText('Game over', WIDTH/2, HEIGHT/2);
 }
 
