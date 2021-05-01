@@ -100,6 +100,8 @@ function draw() {
 //actions at game over
 function gameOver(menu) {
     console.log("inside game over function");
+    menu.style.top = (screenHeight / 2) - (menu.offsetHeight / 2) + "px";
+    menu.style.left = (screenWidth / 2) - (menu.offsetWidth / 2) + "px";
     menu.style.visibility = "visible";
 }
 
