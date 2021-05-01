@@ -159,6 +159,8 @@ function game(){
 
 //keypress function
 onkeydown = function(e) {
+    console.log("key pressed!");
+    console.log(e);
     var key = e.keyCode;
     if((key == LEFT_KEY) && (!right)){
         left = true;
