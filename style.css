@@ -62,8 +62,9 @@ h3 {
     position: absolute;
     visibility: hidden;
     text-align: center;
+    padding: 1vw;
     margin-top: 200px;
-    margin-left: 1000px;
+    margin-left: 500px;
 }
 
 #restartButton {
