@@ -46,7 +46,7 @@ function init() {
     restartButton.addEventListener("click", gameRestart);
 
     quitSurvey = document.getElementById("quitSurvey");
-    quitSurvey.addEventListener();
+    quitSurvey.addEventListener("click", quitAndSurvey);
 
     loadImages();
     createSnake();
@@ -173,6 +173,10 @@ function gameRestart(){
     score = 0;
     inGame = true;
     game();
+}
+
+function quitAndSurvey(){
+    console.log("time for survey!");
 }
 
 //keypress function
