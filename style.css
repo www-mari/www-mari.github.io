@@ -60,4 +60,13 @@ h3 {
     position: absolute;
     visibility: hidden;
     text-align: center;
+    margin-top: 50px;
+}
+
+#restartButton {
+    border: 2px solid black;
+}
+
+#quitSurvey {
+    border: 2px solid black;
 }
