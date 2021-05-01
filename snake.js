@@ -5,6 +5,7 @@ const UP_KEY = 38;
 const DOWN_KEY = 40;
 
 var ctx;
+var gameOverMenu;
 
 const DOT_SIZE = 10;
 const ALL_DOTS = 1600;
@@ -32,10 +33,8 @@ var score = 0;
 function init() {
     const gameBoard = document.getElementById("gameBoard");
     ctx = gameBoard.getContext('2d');
-    console.log("width * height =  (after adding element");
-    console.log(gameBoard.width + gameBoard.height);
-    console.log("width: " + gameBoard.width);
-    console.log("height: " + gameBoard.height);
+
+    gameOverMenu = document.getElementById("gameOver");
 
     loadImages();
     createSnake();
@@ -101,11 +100,11 @@ function draw() {
 //actions at game over
 function gameOver() {
     console.log("inside game over function");
-    ctx.fillStyle = 'white';
-    ctx.textBaseline = 'middle';
-    ctx.textAlign = 'center';
-    ctx.font = 'normal bold 18px serif';
-    ctx.fillText('Game over', WIDTH/2, HEIGHT/2);
+    // ctx.fillStyle = 'white';
+    // ctx.textBaseline = 'middle';
+    // ctx.textAlign = 'center';
+    // ctx.font = 'normal bold 18px serif';
+    // ctx.fillText('Game Over', WIDTH/2, HEIGHT/2);
 }
 
 //move function
