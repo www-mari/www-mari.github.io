@@ -38,8 +38,6 @@ function init() {
     const gameBoard = document.getElementById("gameBoard");
     ctx = gameBoard.getContext('2d');
 
-    document.addEventListener("keydown", KeyboardEvent); //remove this if keys stop working
-
     gameOverMenu = document.getElementById("gameOver");
 
     restartButton = document.getElementById("restartButton");
@@ -105,14 +103,14 @@ function draw() {
             ctx.drawImage(head, snake_x[i], snake_y[i]);
         }
     } else {
-        gameOver(gameOverMenu);
+        gameOver();
     }
 }
 
 //actions at game over
-function gameOver(menu) {
+function gameOver() {
     console.log("inside game over function");
-    menu.style.visibility = "visible";
+    gameOverMenu.style.visibility = "visible";
 }
 
 //move function
@@ -170,9 +168,10 @@ function game(){
 
 function gameRestart(){
     console.log("restart game!");
+    gameOverMenu.style.visibility = "hidden";
     score = 0;
     inGame = true;
-    game();
+    setTimeout("game()", DELAY);
 }
 
 function quitAndSurvey(){
