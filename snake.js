@@ -159,30 +159,26 @@ function game(){
 
 //keypress function
 onkeydown = function(e) {
-    console.log("key pressed!");
-    console.log(e);
+    //console.log("key pressed!");
+    //console.log(e);
     var key = e.key;
-    console.log("key: " + key);
+    //console.log("key: " + key);
     if((key == "ArrowLeft") && (!right)){
-        console.log("LEFT KEY PRESSED");
         left = true;
         up = false;
         down = false;
     }
     if((key == "ArrowRight") && (!left)){
-        console.log("RIGHT KEY PRESSED");
         right = true;
         up = false;
         down = false;
     }
     if((key == "ArrowUp") && (!down)){
-        console.log("UP KEY PRESSED");
         up = true;
         right = false;
         left = false;
     }
     if((key == "ArrowDown") && (!up)){
-        console.log("DOWN KEY PRESSED");
         down = true;
         right = false;
         left = false;
