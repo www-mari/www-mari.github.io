@@ -10,6 +10,11 @@ h1 {
     font-size:xx-large;
 }
 
+h3 {
+    font-family: monospace;
+    color: black;
+}
+
 /* GAME BOARD */
 #gameBoard {
     width: 400;
@@ -54,4 +59,5 @@ h1 {
 #gameOver {
     position: absolute;
     visibility: hidden;
+    text-align: center;
 }
