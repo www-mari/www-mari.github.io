@@ -78,6 +78,7 @@ function checkFood() {
     if((snake_x[0] == food_x) && (snake_y[0] == food_y)){
         dots++;
         score++;
+        document.getElementById("points").innerHTML = score;
         createFood();
     }
 }
