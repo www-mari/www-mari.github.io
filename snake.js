@@ -163,22 +163,26 @@ onkeydown = function(e) {
     console.log(e);
     var key = e.key;
     console.log("key: " + key);
-    if((key == LEFT_KEY) && (!right)){
+    if((key == ArrowLeft) && (!right)){
+        console.log("LEFT KEY PRESSED");
         left = true;
         up = false;
         down = false;
     }
-    if((key = RIGHT_KEY) && (!left)){
+    if((key = ArrowRight) && (!left)){
+        console.log("RIGHT KEY PRESSED");
         right = true;
         up = false;
         down = false;
     }
-    if((key == UP_KEY) && (!down)){
+    if((key == ArrowUp) && (!down)){
+        console.log("UP KEY PRESSED");
         up = true;
         right = false;
         left = false;
     }
-    if((key == DOWN_KEY) && (!up)){
+    if((key == ArrowDown) && (!up)){
+        console.log("DOWN KEY PRESSED");
         down = true;
         right = false;
         left = false;
