@@ -5,7 +5,10 @@ const UP_KEY = 38;
 const DOWN_KEY = 40;
 
 var ctx;
+var screenHeight = screen.height;
+var screenWidth = screen.width;
 var gameOverMenu;
+var restartButton;
 
 const DOT_SIZE = 10;
 const ALL_DOTS = 1600;
@@ -100,8 +103,8 @@ function draw() {
 //actions at game over
 function gameOver(menu) {
     console.log("inside game over function");
-    menu.style.top = (screenHeight / 2) - (menu.offsetHeight / 2) + "px";
-    menu.style.left = (screenWidth / 2) - (menu.offsetWidth / 2) + "px";
+    menu.style.top = (screen.height / 2) - (menu.offsetHeight / 2) + "px";
+    menu.style.left = (screen.width / 2) - (menu.offsetWidth / 2) + "px";
     menu.style.visibility = "visible";
 }
 
