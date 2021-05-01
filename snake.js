@@ -99,9 +99,50 @@ function gameOver() {
     ctx.fillText('Game over', WIDTH/2, HEIGHT/2);
 }
 
+function move() {
+    for(let i = dots; i > 0; i--){
+        snake_x[i] = snake_x[(i - 1)];
+        snake_y[i] = snake_y[(i - 1)];
+    }
+    if(left){
+        snake_x[0] -= DOT_SIZE;
+    }
+    if(right){
+        snake_x[0] += DOT_SIZE;
+    }
+    if(up){
+        snake_y[0] -= DOT_SIZE;
+    }
+    if(down){
+        snake_y[0] += DOT_SIZE;
+    }
+}
+
+function checkCollision() {
+    for(let i = dots; i > 0; i--){
+        if((i > 4) && (snake_x[0] == snake_x[i]) && (snake_y[0] == snake_y[i])){
+            inGame = false;
+        }
+    }
+    if(snake_y[0] >= HEIGHT){
+        inGame = false;
+    }
+    if(snake_y[0] < 0){
+        inGame = false;
+    }
+    if(snake_x[0] >= WIDTH){
+        inGame = false;
+    }
+    if(snake_x[0] < 0){
+        inGame = false;
+    }
+}
+
 function game(){
     if(inGame){
         checkFood();
+        checkCollision();
+        move();
         draw();
         setTimeout("game()", DELAY);
     }
