@@ -11,8 +11,8 @@ h1 {
 
 /* GAME BOARD */
 #gameContainer {
-    width: 40vw;
-    height: 40vw;
+    width: 400;
+    height: 400;
     margin: 1vw auto;
     background-color: #0c1021;
     border: solid 10px slategrey;
