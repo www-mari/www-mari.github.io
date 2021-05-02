@@ -16,7 +16,6 @@ const ALL_DOTS = 1600;
 const WIDTH = gameBoard.width;
 const HEIGHT = gameBoard.height;
 const DELAY = 140;
-// const max_rand & const delay?
 
 var snake_x = new Array(ALL_DOTS);
 var snake_y = new Array(ALL_DOTS);
@@ -28,6 +27,10 @@ var right = true;
 var up = false;
 var down = false;
 var inGame = true;
+
+var start_time;
+var end_time;
+var running_time;
 
 var head;
 var food;
@@ -158,6 +161,7 @@ function checkCollision() {
 //game cycle
 function game(){
     if(inGame){
+        stopwatch();
         checkFood();
         checkCollision();
         move();
@@ -189,10 +193,8 @@ function quitAndSurvey(){
 
 //keypress function
 onkeydown = function(e) {
-    //console.log("key pressed!");
-    //console.log(e);
     var key = e.key;
-    //console.log("key: " + key);
+
     if((key == "ArrowLeft") && (!right)){
         left = true;
         up = false;
@@ -214,3 +216,20 @@ onkeydown = function(e) {
         left = false;
     }
 };
+
+function stopwatch(){
+    start_time = performance.now();
+    console.log("start time: " + start_time); 
+    end_time = performance.now();
+    running_time = end_time - start_time; //in ms
+    console.log("running time: " + running_time);
+    running_secs = (running_time/1000 % 60);
+    console.log("running seconds: " + running_secs);
+    running_mins = (running_time/60000 % 24);
+    console.log("running minutes: " + running_mins);
+
+    var rs_str = sprintf("%02d", running_secs);
+    var rm_str = sprintf("%02d", running_mins);
+    var out = string.concat(rm_str,":",rs_str);
+    console.log("OUT string: " + out);
+}
