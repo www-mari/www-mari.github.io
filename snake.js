@@ -28,9 +28,8 @@ var up = false;
 var down = false;
 var inGame = true;
 
-var start_time = 0;
-var end_time = 0;
-var running_time = 0;
+var start_time = Date.now();
+var running_time;
 
 var head;
 var food;
@@ -219,7 +218,7 @@ onkeydown = function(e) {
 };
 
 function stopwatch(){
-    start_time = Date.now();
+    //start_time = Date.now();
     console.log("start time: " + start_time); 
     running_time = Date.now() - start_time; //in ms
     console.log("running time: " + running_time);
