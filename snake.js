@@ -179,7 +179,7 @@ function gameRestart(){
 
     score = 0;
     restart_count++;
-    console.log("restart count: " + restart_count);
+    //console.log("restart count: " + restart_count);
     document.getElementById("points").innerHTML = score;
 
     loadImages();
