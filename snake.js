@@ -196,6 +196,10 @@ function quitAndSurvey(){
     clearInterval(interval);
     console.log("final score: " + final_score);
     console.log("total elapsed time: " + final_time);
+    document.getElementById("restart").value = restart_count;
+    document.getElementById("time").value = final_time;
+    console.log("document.getElementById('restart').value: " + document.getElementById("restart").value);
+    console.log("document.getElementById('time').value: " + document.getElementById("time").value);
     gameOverMenu.style.visibility = "hidden";
     formMenu.style.visibility = "visible";
 }
