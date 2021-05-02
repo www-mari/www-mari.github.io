@@ -71,7 +71,6 @@ h2, h3 {
 }
 #restartButton:hover {
     background-color: rgb(112, 140, 144);
-    /*background-color: slategrey;*/
 }
 
 #quitSurvey {
@@ -85,4 +84,6 @@ h2, h3 {
 #fs-frm {
     border: 2px solid black;
     background-color: lightgray;
+    margin-left: 10px;
+    margin-top: 10px;
 }
