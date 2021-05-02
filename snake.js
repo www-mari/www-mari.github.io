@@ -223,9 +223,9 @@ function stopwatch(){
     end_time = performance.now();
     running_time = end_time - start_time; //in ms
     console.log("running time: " + running_time);
-    running_secs = (running_time/1000 % 60);
+    running_secs = (running_time/1000);
     console.log("running seconds: " + running_secs);
-    running_mins = (running_time/60000 % 24);
+    running_mins = (running_secs/60);
     console.log("running minutes: " + running_mins);
 
     var out = "";
