@@ -28,9 +28,9 @@ var up = false;
 var down = false;
 var inGame = true;
 
-var start_time;
-var end_time;
-var running_time;
+var start_time = 0;
+var end_time = 0;
+var running_time = 0;
 
 var head;
 var food;
@@ -234,4 +234,5 @@ function stopwatch(){
     console.log("rs_str and rm_str: " + rs_str + " " + rm_str);
     out = out.concat(rm_str,":", rs_str);
     console.log("OUT string: " + out);
+    document.getElementById("timer").innerHTML = out;
 }
