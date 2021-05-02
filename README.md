@@ -12,8 +12,8 @@ The independent variable in this experiment will be the stopwatch. Manipulation 
 
 When each participant has finished playing, they will be presented with a post-experiment survey to answer questions about their normal gaming and social media habits. Some of these questions will include:
 - What is your age?
-- How many hours per week do you spend playing video games? [] 0-3  [] 4-6  [] 7-10  [] 11-14  [] 15-18  [] 19+
-- How many hours per week are you on social media? [] 0-3  [] 4-6  [] 7-10  [] 11-14  [] 11-14  [] 15-18  [] 19+
+- How many hours per week do you spend playing video games? [] 0-3  [] 4-6  [] 7-10  [] 11-14  [] 15+
+- How many hours per week are you on social media? [] 0-3  [] 4-6  [] 7-10  [] 11-14  [] 11-14  [] 15+
 - How many hours per day on average are you on your phone? (use your Screen Time Report in your phone settings to be most accurate) 
 
 In analysis, the participant’s game playing times will be compared with their survey answers to determine if lifestyle gaming and social media habits were reflected in the game experiment. Additionally, the results of the independent stopwatch variable will be compared to determine if the ability to see their gameplaying time affected if participants stopped earlier on average.
