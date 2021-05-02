@@ -52,7 +52,7 @@ function init() {
     loadImages();
     createSnake();
     createFood();
-    stopwatch();
+    setInterval(stopwatch(), 1000);
     setTimeout("game()", DELAY);
 }
 
@@ -184,7 +184,7 @@ function gameRestart(){
     loadImages();
     createSnake();
     createFood();
-    stopwatch();
+    setInterval(stopwatch(), 1000);
     setTimeout("game()", DELAY);
 }
 
@@ -233,7 +233,6 @@ function stopwatch(){
     var rm_str = sprintf("%02d", running_mins);
     console.log("rs_str and rm_str: " + rs_str + " " + rm_str);
     out = out.concat(rm_str,":", rs_str);
-    console.log("OUT string: " + out);
     document.getElementById("timer").innerHTML = out;
 }
 
