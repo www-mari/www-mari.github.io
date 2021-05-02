@@ -68,7 +68,7 @@ function loadImages() {
 //create the snake 
 function createSnake() {
     //snake will start with length of 2
-    dots = 2;
+    dots = 1;
     for(let i = 0; i < dots; i++){
         snake_x[i] = 50 - i * 10;
         snake_y[i] = 50;
@@ -112,7 +112,6 @@ function draw() {
 
 //actions at game over
 function gameOver() {
-    //console.log("inside game over function");
     gameOverMenu.style.visibility = "visible";
 }
 
@@ -225,7 +224,6 @@ onkeydown = function(e) {
 };
 
 function stopwatch(){
-    //start_time = Date.now();
     running_time = Date.now() - start_time; //in ms
     running_secs = (running_time/1000 % 60);
     running_mins = (running_time/60000 % 24)
