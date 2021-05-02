@@ -228,8 +228,8 @@ function stopwatch(){
     running_mins = (running_time/60000 % 24);
     console.log("running minutes: " + running_mins);
 
-    var rs_str = sprintf("%02d", running_secs);
-    var rm_str = sprintf("%02d", running_mins);
+    var rs_str = ("%02d", running_secs);
+    var rm_str = ("%02d", running_mins);
     var out = string.concat(rm_str,":",rs_str);
     console.log("OUT string: " + out);
 }
