@@ -218,9 +218,9 @@ onkeydown = function(e) {
 };
 
 function stopwatch(){
-    start_time = performance.now();
+    start_time = Date.now();
     console.log("start time: " + start_time); 
-    end_time = performance.now();
+    end_time = Date.now();
     running_time = end_time - start_time; //in ms
     console.log("running time: " + running_time);
     running_secs = (running_time/1000);
