@@ -30,6 +30,7 @@ var inGame = true;
 
 var start_time = Date.now();
 var running_time;
+var interval;
 
 var head;
 var food;
@@ -51,18 +52,16 @@ function init() {
     loadImages();
     createSnake();
     createFood();
-    setInterval(stopwatch, 1000);
+    interval = setInterval(stopwatch, 1000);
     setTimeout("game()", DELAY);
 }
 
 function loadImages() {
-
     head = new Image();
     head.src = 'body.png';
 
     food = new Image();
     food.src = 'food.png';
-
 }
 
 //create the snake 
@@ -183,7 +182,7 @@ function gameRestart(){
     loadImages();
     createSnake();
     createFood();
-    setInterval(stopwatch, 1000);
+    interval = setInterval(stopwatch, 1000);
     setTimeout("game()", DELAY);
 }
 
@@ -191,7 +190,7 @@ function quitAndSurvey(){
     console.log("time for survey!");
     var final_score = document.getElementById("points").innerHTML;
     var final_time = document.getElementById("timer").innerHTML;
-    clearInterval();
+    clearInterval(interval);
     console.log("final score: " + final_score);
     console.log("total elapsed time: " + final_time);
 }
