@@ -36,6 +36,7 @@ var head;
 var food;
 var dots;
 var score = 0;
+var restart_count = 0;
 
 function init() {
     const gameBoard = document.getElementById("gameBoard");
@@ -177,6 +178,8 @@ function gameRestart(){
     inGame = true;
 
     score = 0;
+    restart_count++;
+    console.log("restart count: " + restart_count);
     document.getElementById("points").innerHTML = score;
 
     loadImages();
