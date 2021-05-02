@@ -219,18 +219,13 @@ onkeydown = function(e) {
 
 function stopwatch(){
     //start_time = Date.now();
-    console.log("start time: " + start_time); 
     running_time = Date.now() - start_time; //in ms
-    console.log("running time: " + running_time);
-    running_secs = (running_time/1000);
-    console.log("running seconds: " + running_secs);
+    running_secs = (running_time/1000 % 60);
     running_mins = (running_secs/60);
-    console.log("running minutes: " + running_mins);
 
     var out = "";
     var rs_str = sprintf("%02d", running_secs);
     var rm_str = sprintf("%02d", running_mins);
-    console.log("rs_str and rm_str: " + rs_str + " " + rm_str);
     out = out.concat(rm_str,":", rs_str);
     document.getElementById("timer").innerHTML = out;
 }
