@@ -35,7 +35,7 @@ h2, h3 {
 } */
 
 /* SCORE BOX */
-#scoreBoard {
+/* #scoreBoard {
     width: 20vw;
     display: flex;
     margin: auto;
@@ -54,7 +54,7 @@ h2, h3 {
   
     -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.4);
     box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.4);
-}
+} */
 
 /* TIME BOX */
 #timeBoard {
