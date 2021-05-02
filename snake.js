@@ -52,7 +52,7 @@ function init() {
     loadImages();
     createSnake();
     createFood();
-    setInterval(stopwatch(), 1000);
+    setInterval(stopwatch, 1000);
     setTimeout("game()", DELAY);
 }
 
@@ -184,7 +184,7 @@ function gameRestart(){
     loadImages();
     createSnake();
     createFood();
-    setInterval(stopwatch(), 1000);
+    setInterval(stopwatch, 1000);
     setTimeout("game()", DELAY);
 }
 
