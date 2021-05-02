@@ -1,6 +1,8 @@
 # Gaming/Media Addiction Experiment
 Mari Dudek
 
+### My game can be played at: [www-mari.github.io](www-mari.github.io)
+
 ## Description
 For this project, I am exploring social media and gaming addiction. I will be exploring the connection between the length of time spent playing a simple game and the amount of time the participant spends on social media and games per week (answered in a post-experiment survey). The game played by participants will be something mindless and simple to play, and easy to restart if you lose. This way the participant can continue to play for as long as they want. I believe the best candidate for the game is Snake. Everyone likely already knows how the game is played.
 
