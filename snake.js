@@ -229,8 +229,8 @@ function stopwatch(){
     console.log("running minutes: " + running_mins);
 
     var out = "";
-    var rs_str = ("%02d", running_secs);
-    var rm_str = ("%02d", running_mins);
+    var rs_str = running_secs.toFixed(2);
+    var rm_str = running_mins.toFixed(2);
     console.log("rs_str and rm_str: " + rs_str + " " + rm_str);
     out = out.concat(rm_str,":", rs_str);
     console.log("OUT string: " + out);
