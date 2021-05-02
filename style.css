@@ -84,7 +84,12 @@ h2, h3 {
 #fs-frm {
     border: 2px solid black;
     background-color: lightgray;
-    margin-left: 10px;
-    margin-top: 10px;
     position: absolute;
+}
+
+#form {
+    border: 2px solid black;
+    background-color: lightgray;
+    position: absolute;
+    text-align: center;
 }
