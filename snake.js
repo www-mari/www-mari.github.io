@@ -229,10 +229,26 @@ function stopwatch(){
     console.log("running minutes: " + running_mins);
 
     var out = "";
-    var rs_str = (running_secs).toFixed(2);
-    var rm_str = (running_mins).toFixed(2);
+    var rs_str = sprintf("%02d", running_secs);
+    var rm_str = sprintf("%02d", running_mins);
     console.log("rs_str and rm_str: " + rs_str + " " + rm_str);
     out = out.concat(rm_str,":", rs_str);
     console.log("OUT string: " + out);
     document.getElementById("timer").innerHTML = out;
+}
+
+function sprintf(str) {
+    var args = arguments, i = 1;
+
+    return str.replace(/%(s|d|0\d+d)/g, function (x, type) {
+        var value = args[i++];
+        switch (type) {
+        case 's': return value;
+        case 'd': return parseInt(value, 10);
+        default:
+            value = String(parseInt(value, 10));
+            var n = Number(type.slice(1, -1));
+            return '0'.repeat(n).slice(value.length) + value;
+        }
+    });
 }
