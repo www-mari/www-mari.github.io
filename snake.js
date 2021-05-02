@@ -52,6 +52,7 @@ function init() {
     loadImages();
     createSnake();
     createFood();
+    stopwatch();
     setTimeout("game()", DELAY);
 }
 
@@ -161,7 +162,6 @@ function checkCollision() {
 //game cycle
 function game(){
     if(inGame){
-        stopwatch();
         checkFood();
         checkCollision();
         move();
@@ -184,6 +184,7 @@ function gameRestart(){
     loadImages();
     createSnake();
     createFood();
+    stopwatch();
     setTimeout("game()", DELAY);
 }
 
@@ -220,8 +221,7 @@ onkeydown = function(e) {
 function stopwatch(){
     start_time = Date.now();
     console.log("start time: " + start_time); 
-    end_time = Date.now();
-    running_time = end_time - start_time; //in ms
+    running_time = Date.now() - start_time; //in ms
     console.log("running time: " + running_time);
     running_secs = (running_time/1000);
     console.log("running seconds: " + running_secs);
