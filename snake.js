@@ -221,7 +221,7 @@ function stopwatch(){
     //start_time = Date.now();
     running_time = Date.now() - start_time; //in ms
     running_secs = (running_time/1000 % 60);
-    running_mins = (running_secs/60);
+    running_mins = (running_time/60000 % 24)
 
     var out = "";
     var rs_str = sprintf("%02d", running_secs);
