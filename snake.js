@@ -168,12 +168,14 @@ function game(){
 
 function gameRestart(){
     gameOverMenu.style.visibility = "hidden";
-    score = 0;
     left = false;
     right = true;
     up = false;
     down = false;
     inGame = true;
+
+    score = 0;
+    document.getElementById("points").innerHTML = score;
 
     loadImages();
     createSnake();
