@@ -10,7 +10,7 @@
     </head>
 
     <body onload="init();">
-        <h1> SNAKE! form test 8</h1>
+        <h1> SNAKE! form test 9</h1>
 
         <!-- #fs-frm shows post-game survey -->
         <section id="form">
@@ -21,7 +21,7 @@
                 <label for="age">Age</label>
                 <input type="number" name="age" id="age" placeholder="Enter age" required="">
                 <label for="time">Time Elapsed</label>
-                <input type="hidden" name="time" id="time" value=timeBox.timer>
+                <input type="text" name="time" id="time" value=timeBox.timer>
                 <fieldset id="fs-frm-selects">
                     <label for="video-game">1. Roughly how many hours per week do you spend playing video games?</label>
                     <select name="video-game" id="video-game" required="">
@@ -42,8 +42,8 @@
                     <option value="5">15+</option>
                     </select>
                 </fieldset>
-                <label for="screen-time">3. Please report your most recent Screen-Time report from your phone. (Settings > Screen Time > Daily Average)</label>
-                <input name="screen-time" id="screen-time" placeholder="Daily Average from this week: EX. 4hrs 30mins" required="">
+                <label for="screen-time">3. Please report your most recent week's Screen-Time Daily Average from your phone. (Settings > Screen Time > Daily Average)</label>
+                <input name="screen-time" id="screen-time" placeholder="EX. 4hrs 30mins" required="">
                 <input type="hidden" name="_subject" id="email-subject" value="Survey Responses">
                 </fieldset>
                 <input type="submit" value="Send Responses">

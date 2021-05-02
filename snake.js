@@ -42,6 +42,7 @@ function init() {
     ctx = gameBoard.getContext('2d');
 
     gameOverMenu = document.getElementById("gameOver");
+    formMenu = document.getElementById("form");
 
     restartButton = document.getElementById("restartButton");
     restartButton.addEventListener("click", gameRestart);
@@ -111,7 +112,7 @@ function draw() {
 
 //actions at game over
 function gameOver() {
-    console.log("inside game over function");
+    //console.log("inside game over function");
     gameOverMenu.style.visibility = "visible";
 }
 
@@ -194,6 +195,7 @@ function quitAndSurvey(){
     console.log("final score: " + final_score);
     console.log("total elapsed time: " + final_time);
     gameOverMenu.style.visibility = "hidden";
+    formMenu.style.visibility = "visible";
 }
 
 //keypress function
