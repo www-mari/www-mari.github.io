@@ -193,6 +193,7 @@ function quitAndSurvey(){
     clearInterval(interval);
     console.log("final score: " + final_score);
     console.log("total elapsed time: " + final_time);
+    gameOverMenu.style.visibility = "hidden";
 }
 
 //keypress function
