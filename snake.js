@@ -23,7 +23,7 @@ var food_x;
 var food_y;
 
 var left = false;
-var right = true;
+var right = false;
 var up = false;
 var down = false;
 var inGame = true;
