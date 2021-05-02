@@ -86,10 +86,10 @@ h2, h3 {
     border-radius: 5px;
     border: 2px solid black;
     background-color: lightgray;
-    position: sticky;
+    position: absolute;
     visibility: hidden;
     padding: 1vw;
     margin-top: 100px;
-    margin-left: 100px;
+    margin-left: 90px;
     /* margin: auto; */
 }
