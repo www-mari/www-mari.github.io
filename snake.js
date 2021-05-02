@@ -172,7 +172,7 @@ function game(){
 function gameRestart(){
     gameOverMenu.style.visibility = "hidden";
     left = false;
-    right = true;
+    right = false;
     up = false;
     down = false;
     inGame = true;
