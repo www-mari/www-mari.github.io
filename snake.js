@@ -185,7 +185,7 @@ function gameRestart(){
     loadImages();
     createSnake();
     createFood();
-    interval = setInterval(stopwatch, 1000);
+    //interval = setInterval(stopwatch, 1000);
     setTimeout("game()", DELAY);
 }
 
