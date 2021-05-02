@@ -189,6 +189,11 @@ function gameRestart(){
 
 function quitAndSurvey(){
     console.log("time for survey!");
+    var final_score = document.getElementById("points").innerHTML;
+    var final_time = document.getElementById("timer").innerHTML;
+    clearInterval();
+    console.log("final score: " + final_score);
+    console.log("total elapsed time: " + final_time);
 }
 
 //keypress function
