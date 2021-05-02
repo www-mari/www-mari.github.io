@@ -61,9 +61,9 @@ h2, h3 {
     visibility: hidden;
     text-align: center;
     padding: 1vw;
-    /* margin-top: 125px;
-    margin-left: 850px; */
-    margin: auto;
+    margin-top: 125px;
+    margin-left: 900px;
+    /*margin: auto;*/
 }
 
 #restartButton {
@@ -89,7 +89,7 @@ h2, h3 {
     position: absolute;
     visibility: hidden;
     padding: 1vw;
-    /* margin-top: 100px;
-    margin-left: 20px; */
-    margin: auto;
+    margin-top: 100px;
+    margin-left: 40px;
+    /* margin: auto; */
 }
