@@ -11,10 +11,10 @@ For the testing of my project, I will design a simple and easy to play game that
 The independent variable in this experiment will be the stopwatch. Manipulation of the independent variable will not be any manipulation of the stopwatch itself, but manipulation of its visibility to the experiment participants. Half of the participants will have access to a visible stopwatch and be able to see how long they have been playing the game from start to finish. The other half of the participants will not be able to see how long they played the game at any time.
 
 When each participant has finished playing, they will be presented with a post-experiment survey to answer questions about their normal gaming and social media habits. Some of these questions will include:
-•	What is your age? [] 16-25  [] 26-35  [] 36+
-•	How many hours per week do you spend playing video games? [] 0-3  [] 4-6  [] 7-10  [] 11-14  [] 15-18  [] 19+
-•	How many hours per week are you on social media? [] 0-3  [] 4-6  [] 7-10  [] 11-14  [] 11-14  [] 15-18  [] 19+
-•	How many hours per day on average are you on your phone? (use your Screen Time Report in your phone settings to be most accurate) [] 0-2  [] 3-4  [] 5-6  [] 7-8  [] 9-10  [] 11-12  [] 13+  
+- What is your age?
+- How many hours per week do you spend playing video games? [] 0-3  [] 4-6  [] 7-10  [] 11-14  [] 15-18  [] 19+
+- How many hours per week are you on social media? [] 0-3  [] 4-6  [] 7-10  [] 11-14  [] 11-14  [] 15-18  [] 19+
+- How many hours per day on average are you on your phone? (use your Screen Time Report in your phone settings to be most accurate) 
 
 In analysis, the participant’s game playing times will be compared with their survey answers to determine if lifestyle gaming and social media habits were reflected in the game experiment. Additionally, the results of the independent stopwatch variable will be compared to determine if the ability to see their gameplaying time affected if participants stopped earlier on average.
 
