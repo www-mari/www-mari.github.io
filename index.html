@@ -10,7 +10,7 @@
     </head>
 
     <body onload="init();">
-        <h1> SNAKE! form test 2</h1>
+        <h1> SNAKE! form test 3/h1>
 
         <!-- #gameOver is the endgame prompt -->
         <section id="gameOver">
@@ -37,7 +37,9 @@
                 <label for="name">Name (Optional)</label>
                 <input type="text" name="name" id="name" placeholder="Enter name">
                 <label for="age">Age</label>
-                <input type="text" name="age" id="age" placeholder="Enter age" required="">
+                <input type="number" name="age" id="age" placeholder="Enter age" required="">
+                <label for="time">Time Elapsed</label>
+                <input type="hidden" name="time" id="time" value=timeBox.timer>
                 <fieldset id="fs-frm-selects">
                     <label for="video-game">1. Roughly how many hours per week do you spend playing video games?</label>
                     <select name="video-game" id="video-game" required="">
