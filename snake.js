@@ -68,7 +68,7 @@ function loadImages() {
 
 //create the snake 
 function createSnake() {
-    //snake will start with length of 2
+    //snake will start with length of 1
     dots = 1;
     for(let i = 0; i < dots; i++){
         snake_x[i] = 50 - i * 10;
@@ -179,27 +179,23 @@ function gameRestart(){
 
     score = 0;
     restart_count++;
-    //console.log("restart count: " + restart_count);
     document.getElementById("points").innerHTML = score;
 
     loadImages();
     createSnake();
     createFood();
-    //interval = setInterval(stopwatch, 1000);
     setTimeout("game()", DELAY);
 }
 
 function quitAndSurvey(){
-    console.log("time for survey!");
     var final_score = document.getElementById("points").innerHTML;
     var final_time = document.getElementById("timer").innerHTML;
+
     clearInterval(interval);
-    console.log("final score: " + final_score);
-    console.log("total elapsed time: " + final_time);
+
     document.getElementById("restart").value = restart_count;
     document.getElementById("time").value = final_time;
-    console.log("document.getElementById('restart').value: " + document.getElementById("restart").value);
-    console.log("document.getElementById('time').value: " + document.getElementById("time").value);
+
     gameOverMenu.style.visibility = "hidden";
     formMenu.style.visibility = "visible";
 }
