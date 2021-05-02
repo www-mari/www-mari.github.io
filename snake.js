@@ -230,6 +230,6 @@ function stopwatch(){
 
     var rs_str = ("%02d", running_secs);
     var rm_str = ("%02d", running_mins);
-    var out = string.concat(rm_str,":",rs_str);
+    var out = rm_str.concat(":", rs_str);
     console.log("OUT string: " + out);
 }
