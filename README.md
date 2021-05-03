@@ -22,3 +22,9 @@ In analysis, the participant’s game playing times will be compared with their 
 
 ## Participants 
 I have not yet begun experiments. At this moment, my plan is for my participant study group to be made up of a wide range of ages, but mostly college students and/or teenagers. I will have around 30 participants, but hopefully more, and each participant will only do the experiment once (either with the visible timer, or with the hidden timer). 
+
+## Questions for Feedback
+I'm wondering if it would be possible to provide incentive for participants (from class) to play the game longer. Usually people with 
+video game addiction play the game for a reason, such as a prize or a highscore. I am considering implementing a highscores list as a 
+part of my game display. My question is: is it at all possible to offer 1 point extra credit to the best high score in the class 
+participants? It's okay if not, I just thought I would ask. Thanks!! 

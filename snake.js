@@ -44,6 +44,9 @@ function init() {
 
     gameOverMenu = document.getElementById("gameOver");
     formMenu = document.getElementById("form");
+    formMenu.style.top = (screenHeight/2) - (formMenu.offsetHeight/2) + "px";
+    formMenu.style.left = (screenWidth/2) - (formMenu.offsetWidth/2) + "px";
+    console.log("styles: " + formMenu.style.top + " " + formMenu.style.left);
 
     restartButton = document.getElementById("restartButton");
     restartButton.addEventListener("click", gameRestart);
