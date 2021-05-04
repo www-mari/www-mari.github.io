@@ -100,5 +100,15 @@ h2, h3 {
     background-color: lightgray;
     position: absolute;
     padding: 1vw;
-    margin-left: 10px;
+    margin-left: 8px;
+}
+
+#startButton {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #40FF00;
+
+}
+#startButton:hover {
+    background-color: rgb(112, 140, 144);
 }
