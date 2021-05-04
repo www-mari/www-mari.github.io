@@ -111,6 +111,7 @@ h2, h3 {
     background-color: #40FF00;
     text-align: center;
     visibility: visible;
+    z-index: -1;
 
 }
 #startButton:hover {
