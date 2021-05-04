@@ -62,6 +62,7 @@ function init() {
 }
 
 function start(){
+    startButton.style.visibility = "hidden";
     loadImages();
     createSnake();
     createFood();

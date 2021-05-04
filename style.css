@@ -109,6 +109,7 @@ h2, h3 {
     border-radius: 10px;
     background-color: #40FF00;
     text-align: center;
+    visibility: visible;
 
 }
 #startButton:hover {
