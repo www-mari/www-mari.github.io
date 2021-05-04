@@ -107,6 +107,7 @@ h2, h3 {
     border: 2px solid black;
     border-radius: 10px;
     background-color: #40FF00;
+    width: 50%;
 
 }
 #startButton:hover {
