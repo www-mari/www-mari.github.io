@@ -48,9 +48,20 @@ function init() {
     restartButton = document.getElementById("restartButton");
     restartButton.addEventListener("click", gameRestart);
 
+    startButton = document.getElementById("startButton");
+    startButton.addEventListener("click", start)
+
     quitSurvey = document.getElementById("quitSurvey");
     quitSurvey.addEventListener("click", quitAndSurvey);
 
+    // loadImages();
+    // createSnake();
+    // createFood();
+    // interval = setInterval(stopwatch, 1000);
+    // setTimeout("game()", DELAY);
+}
+
+function start(){
     loadImages();
     createSnake();
     createFood();
