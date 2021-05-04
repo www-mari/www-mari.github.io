@@ -101,6 +101,7 @@ h2, h3 {
     position: absolute;
     padding: 1vw;
     margin-left: 8px;
+    text-align: center;
 }
 
 #startButton {
