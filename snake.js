@@ -207,6 +207,7 @@ function quitAndSurvey(){
 
     document.getElementById("restart").value = restart_count;
     document.getElementById("time").value = final_time;
+    document.getElementById("finalscore").value = final_score;
 
     gameOverMenu.style.visibility = "hidden";
     formMenu.style.visibility = "visible";
